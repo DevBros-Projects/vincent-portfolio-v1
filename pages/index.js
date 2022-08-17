@@ -12,6 +12,8 @@
  **/
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/About";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -21,7 +23,13 @@ export default function Home() {
         <meta name="description" content="Vincent Obbeng Fiifi" />
         <link rel="icon" href="" />
       </Head>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* navbar */}
+      {/* body */}
+      <main className="p-4 md:p-12">
+        <About />
+        <Skills />
+      </main>
+      {/* footer */}
     </div>
   );
 }
