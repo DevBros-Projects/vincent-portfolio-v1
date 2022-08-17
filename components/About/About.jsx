@@ -19,7 +19,7 @@ const style = {
 
 const About = () => {
 	return (
-		<div>
+		<div className="mb-12">
 
 			<h1 className={style.header}>About</h1>
 			<hr className={style.line} />

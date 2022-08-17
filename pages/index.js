@@ -12,8 +12,8 @@
  **/
 import Head from "next/head";
 import Image from "next/image";
-import About from "../components/About";
-import Skills from "../components/Skills";
+import About from "../components/About/About";
+import Skills from "../components/Skills/Skills";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       {/* navbar */}
       {/* body */}
-      <main className="p-4 md:p-12">
+      <main className="p-5 md:p-12">
         <About />
         <Skills />
       </main>

@@ -11,19 +11,30 @@
     * - Modification    : 
 **/
 import React from 'react'
+import Data from './skillList';
+import Skill from './SkillEntry';
 
 const style = {
 	header: `text-2xl md:text-3xl mb-2`,
-	paragraph: `font-light text-sm tracking-wider mt-2`,
 	line: `border-1`,
 };
 
 const Skills = () => {
+
+
 	return (
 		<div>
-			<div>
+
+			<div className='mb-2'>
 				<h1 className={style.header}>Skills</h1>
 				<hr className={style.line} />
+			</div>
+			<div className='block md:flex md:flex-wrap'>
+				{
+					Data.map(item => (
+						<Skill key={item.id} header={item.header} paragraph={item.paragraph} />
+					))
+				}
 			</div>
 		</div>
 	)
