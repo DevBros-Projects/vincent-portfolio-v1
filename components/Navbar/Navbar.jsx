@@ -28,6 +28,9 @@ import Link from "next/dist/client/link";
 
 import NavIcons from "./NavIcons";
 
+import { data } from "./navData";
+import NavItem from "./NavItem";
+
 const style = {
   navItem: `mt-5 font-bold text-center text-lg  gradient`,
 };
@@ -63,30 +66,11 @@ const Navbar = () => {
             showSidebar ? "translate-x-0 " : "translate-x-full"
           }`}
         >
-          <Link href="#about">
-            <h3
-              onClick={() => setShowSidebar(!showSidebar)}
-              className={style.navItem}
-            >
-              About
-            </h3>
-          </Link>
-          <Link href="#services">
-            <h3
-              onClick={() => setShowSidebar(!showSidebar)}
-              className={style.navItem}
-            >
-              Projects
-            </h3>
-          </Link>
-          <Link href="#">
-            <h3
-              onClick={() => setShowSidebar(!showSidebar)}
-              className={style.navItem}
-            >
-              <a target="_blank"> Blog </a>
-            </h3>
-          </Link>
+          {/* nav iiems mapped */}
+          {data.map((item) => (
+            <NavItem key={item.id} data={item} />
+          ))}
+
           <NavIcons />
         </div>
       </header>
