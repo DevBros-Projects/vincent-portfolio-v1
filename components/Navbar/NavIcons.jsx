@@ -17,7 +17,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 const style = {
-  wrapper: `flex justify-center space-x-4 items-center  text-base mt-10`,
+  wrapper: `flex justify-center space-x-4 items-center  text-base mt-10 md:mt-0`,
   icon: `text-primary w-5 h-5`,
 };
 

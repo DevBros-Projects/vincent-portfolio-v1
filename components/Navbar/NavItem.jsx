@@ -12,6 +12,10 @@
  **/
 import React from "react";
 import Link from "next/dist/client/link";
+
+const style = {
+  navItem: `cursor-pointer hover:underline decoration-teal-400  mt-5 md:mt-0 font-bold md:font-normal text-center text-lg md:text-{#fff} tracking-wide`,
+};
 const NavItem = ({ data }) => {
   const { name, link } = data;
 

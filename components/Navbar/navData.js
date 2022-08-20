@@ -18,8 +18,8 @@ export const data = [
   },
   {
     id: 2,
-    name: "Projects",
-    link: "#projects",
+    name: "Portfolio",
+    link: "#portfolio",
   },
   {
     id: 3,

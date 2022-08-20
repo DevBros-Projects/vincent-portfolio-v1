@@ -35,7 +35,7 @@ const style = {
   wrapper: `md:hidden bg-gray-100 mb-20`,
   nav: " mx-auto flex tracking-wider items-center fixed inset-x-0  top-0 h-20 z-50",
   menu: "font-bold fixed z-50 flex items-center cursor-pointer right-5 top-7 text-2xl text-primary",
-  navItem: `mt-5 font-bold text-center text-lg  gradient`,
+
   btn: "flex items-center cursor-pointer fixed right-5 top-7 z-50",
 };
 
@@ -77,6 +77,24 @@ const Navbar = () => {
 
           <NavIcons />
         </div>
+      </header>
+
+      {/* large screen navBar */}
+      <header className="hidden md:block p-6  w-full ">
+        <nav className="  flex justify-evenly items-center  ">
+          <div className="flex text-primary">
+            <GiPoolTriangle className="text-xl" />
+            <BsFillCircleFill className="text-xl" />
+          </div>
+
+          <div className="mx-auto  flex flex-wrap text-lg justify-center space-x-7 ">
+            {/* nav iiems mapped */}
+            {data.map((item) => (
+              <NavItem key={item.id} data={item} />
+            ))}
+          </div>
+          <NavIcons />
+        </nav>
       </header>
     </>
   );
