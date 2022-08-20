@@ -32,15 +32,19 @@ import { data } from "./navData";
 import NavItem from "./NavItem";
 
 const style = {
+  wrapper: `md:hidden bg-gray-100 mb-20`,
+  nav: " mx-auto flex tracking-wider items-center fixed inset-x-0  top-0 h-20 z-50",
+  menu: "font-bold fixed z-50 flex items-center cursor-pointer right-5 top-7 text-2xl text-primary",
   navItem: `mt-5 font-bold text-center text-lg  gradient`,
+  btn: "flex items-center cursor-pointer fixed right-5 top-7 z-50",
 };
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
-      <header className="md:hidden bg-gray-100 mb-20">
-        <nav className=" mx-auto flex tracking-wider items-center fixed inset-x-0  top-0 h-20 z-50">
+      <header className={style.wrapper}>
+        <nav className={style.nav}>
           <Link href="#">
             <div className="flex ml-3 text-primary">
               <GiPoolTriangle className="text-xl" />
@@ -49,7 +53,7 @@ const Navbar = () => {
           </Link>
           {showSidebar ? (
             <button
-              className="flex items-center cursor-pointer fixed right-5 top-7 z-50"
+              className={style.btn}
               onClick={() => setShowSidebar(!showSidebar)}
             >
               <GoEyeClosed className="text-xl text-primary" />
@@ -57,7 +61,7 @@ const Navbar = () => {
           ) : (
             <HiMenu
               onClick={() => setShowSidebar(!showSidebar)}
-              className="font-bold fixed z-50 flex items-center cursor-pointer right-5 top-7 text-2xl text-primary"
+              className={style.menu}
             />
           )}
         </nav>
