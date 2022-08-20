@@ -27,7 +27,7 @@ const Data = [
     id: 3,
     header: "Web and Mobile UI Design",
     paragraph:
-      "Using prototyping and vector graphics tools such as figma, I create attractive web and mobile interfaces.",
+      "Using prototyping and vector graphics tools such as Figma, I create attractive web and mobile interfaces.",
   },
 ];
 
