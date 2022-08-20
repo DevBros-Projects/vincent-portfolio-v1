@@ -16,7 +16,9 @@ const style = {
     paragraph: `font-light text-sm tracking-wider mt-2 mb-2 text-wrap w-full md:w-4/5`,
 }
 
-const Skill = ({ header, paragraph }) => {
+const Skill = ({ item }) => {
+    const { header, paragraph } = item;
+
     return (
         <div className='mb-2 w-full md:w-1/3'>
             <h2 className='text-md text-primary'> {header}</h2>

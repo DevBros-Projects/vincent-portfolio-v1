@@ -32,7 +32,7 @@ const Skills = () => {
 			<div className='block md:flex md:flex-wrap'>
 				{
 					Data.map(item => (
-						<Skill key={item.id} header={item.header} paragraph={item.paragraph} />
+						<Skill key={item.id} item={item} />
 					))
 				}
 			</div>
