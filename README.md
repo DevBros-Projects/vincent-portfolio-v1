@@ -1,6 +1,9 @@
 # Vincent Obbeng, Fiifi | Porfolio
 
 ## Project Details
+Portfolio website for 1/2 DevBros, Vincent. 
+- UI design by Vincent.
+- Coding and development by Big Mike.
 
 ### Colors
 
