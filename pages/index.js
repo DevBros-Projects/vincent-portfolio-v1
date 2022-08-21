@@ -11,10 +11,13 @@
  * - Modification    :
  **/
 import Head from "next/head";
-import Image from "next/image";
+
 import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
 import Navbar from "../components/Navbar/Navbar";
+import SplitScreen from "../components/Hero/SplitScreen";
+import LeftScreen from "../components/Hero/LeftScreen";
+import RightScreen from "../components/Hero/RightScreen";
 
 export default function Home() {
   return (
@@ -28,6 +31,9 @@ export default function Home() {
       <Navbar />
       {/* body */}
       <main className="p-5 md:p-12">
+        {/* hero section */}
+        <SplitScreen left={LeftScreen} right={RightScreen} />
+        {/* about & skills */}
         <About />
         <Skills />
       </main>
