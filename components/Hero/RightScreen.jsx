@@ -25,7 +25,7 @@ const RightScreen = () => {
         src={photo}
         alt="image"
         width={350}
-        height={450}
+        height={470}
       />
     </div>
   );
