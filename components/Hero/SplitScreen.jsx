@@ -13,8 +13,8 @@
 import React from "react";
 
 const style = {
-  wrapper: `flex justify-evenly `,
-  pane: `flex-1`,
+  wrapper: `flex `,
+  pane: ``,
 };
 const SplitScreen = ({ left: Left, right: Right }) => {
   return (
