@@ -19,15 +19,15 @@ const style = {
 
 const RightScreen = () => {
   return (
-    <div>
+    <>
       <Image
         className={style.image}
         src={photo}
         alt="image"
         width={350}
-        height={470}
+        height={500}
       />
-    </div>
+    </>
   );
 };
 

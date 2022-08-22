@@ -13,20 +13,23 @@
 import React from "react";
 
 const style = {
-  header: `text-5xl`,
+  header: `text-5xl tracking-wider leading-2`,
 };
 
 const LeftScreen = () => {
   return (
     <div>
       <h3 className={style.header}>
-        Hi, I’m Vincent. A web developer and UI designer.
+        Hi, I’m Vincent.
+        <br /> A web developer <br /> and UI designer.
       </h3>
-      <p>
-        I create simple and visually appealing digital products which provide a
-        seamless experience to the end user.{" "}
+      <p className="mt-3">
+        I create simple and visually appealing digital products <br /> which
+        provide a seamless experience to the end user.{" "}
       </p>
-      <button>Contact Me</button>
+      <button className="mt-3 py-1 px-4 bg-primary text-white  transition ease-in duration-200 text-center">
+        Contact Me
+      </button>
     </div>
   );
 };
