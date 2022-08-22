@@ -15,7 +15,7 @@ import React from "react";
 const style = {
   smallHeader: `md:hidden text-3xl tracking-wide leading-1`,
   largeHeader: `hidden md:block text-5xl tracking-wider leading-2`,
-  smallP: `md:hidden mt-3 text-lg tracking-wide leading-2`,
+  smallP: `md:hidden mt-3 tracking-wide leading-2`,
   largeP: `hidden mt-3 md:block`,
 };
 
