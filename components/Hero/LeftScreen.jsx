@@ -13,21 +13,31 @@
 import React from "react";
 
 const style = {
-  header: `text-5xl tracking-wider leading-2`,
+  smallHeader: `md:hidden text-3xl tracking-wide leading-1`,
+  largeHeader: `hidden md:block text-5xl tracking-wider leading-2`,
+  smallP: `md:hidden mt-3 text-lg tracking-wide leading-2`,
+  largeP: `hidden mt-3 md:block`,
 };
 
 const LeftScreen = () => {
   return (
     <div>
-      <h3 className={style.header}>
+      <h3 className={style.largeHeader}>
         Hi, I’m Vincent.
         <br /> A web developer <br /> and UI designer.
       </h3>
-      <p className="mt-3">
+      <h3 className={style.smallHeader}>
+        Hi, I’m Vincent. A web developer and UI designer.
+      </h3>
+      <p className={style.largeP}>
         I create simple and visually appealing digital products <br /> which
         provide a seamless experience to the end user.{" "}
       </p>
-      <button className="mt-3 py-1 px-4 bg-primary text-white  transition ease-in duration-200 text-center">
+      <p className={style.smallP}>
+        I create simple and visually appealing digital products which provide a
+        seamless experience to the end user.{" "}
+      </p>
+      <button className="my-3 py-1 px-4 bg-primary text-white  transition ease-in duration-200 text-center">
         Contact Me
       </button>
     </div>

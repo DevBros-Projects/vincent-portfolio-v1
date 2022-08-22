@@ -13,16 +13,16 @@
 import React from "react";
 
 const style = {
-  wrapper: `flex space-x-12`,
+  wrapper: `block md:flex space-x-0 md:space-x-12 mb-12`,
   pane: ``,
 };
 const SplitScreen = ({ left: Left, right: Right }) => {
   return (
     <div className={style.wrapper}>
-      <div className="justify-start w-3/5 ${style.pane}">
+      <div className="w-full md:w-3/5">
         <Left />
       </div>
-      <div className=" flex justify-center ">
+      <div className=" flex md:justify-center ">
         <Right />
       </div>
     </div>
