@@ -37,7 +37,7 @@ const LeftScreen = () => {
         I create simple and visually appealing digital products which provide a
         seamless experience to the end user.{" "}
       </p>
-      <button className="my-3 py-1 px-4 bg-primary text-white  transition ease-in duration-200 text-center">
+      <button className="my-5  py-1 px-4 bg-primary text-white  transition ease-in duration-200 text-center">
         Contact Me
       </button>
     </div>

@@ -32,8 +32,8 @@ import { data } from "./navData";
 import NavItem from "./NavItem";
 
 const style = {
-  wrapper: `md:hidden bg-gray-100 mb-20`,
-  nav: " mx-auto flex tracking-wider items-center fixed inset-x-0  top-0 h-20 z-50",
+  wrapper: `md:hidden mb-20`,
+  nav: " mx-auto flex tracking-wider bg-white items-center fixed inset-x-0  top-0 h-20 z-50",
   menu: "font-bold fixed z-50 flex items-center cursor-pointer right-5 top-7 text-2xl text-primary",
 
   btn: "flex items-center cursor-pointer fixed right-5 top-7 z-50",
@@ -66,7 +66,7 @@ const Navbar = () => {
           )}
         </nav>
         <div
-          className={`top-0 right-0 w-[100vw] bg-white p-10 fixed h-[100vh] z-40  ease-in-out duration-300 ${
+          className={`mt-4 top-0 right-0 w-[100vw] bg-white p-10 fixed h-[100vh] z-40  ease-in-out duration-300 ${
             showSidebar ? "translate-x-0 " : "translate-x-full"
           }`}
         >
